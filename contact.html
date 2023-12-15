@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+	<script src="jss.js"></script>
+
 </head>
 
 <body>
@@ -24,28 +26,43 @@
     <main>
         <img src="image2.jpg" width="400px" height="300px" style="float: right; margin: 10px;">
 
-        <br><input type="text" placeholder="votre nom" /><br>
-        <br><input type="text" placeholder="message ici" /><br>
-        <br><input type="file" /> <br>
-        <label for="urgent">Urgent ? :</label>
-        <input type="checkbox" /><br>
-        <input type="submit" />
-        <h2>me Contacter</h2>
-        <p>email : jesser.sallemi@esprit.tn </p>
-        <p> num : +216 28 617 477</p>
-        <p> adress : rue el saada,ariana,Tunisie </p>
-        <h2>media:</h2>
-		<img src="images.png" width="400px" height="300px" >
-        <a href="https://www.linkedin.com/in/jesser-sallemi-4baa0412b/"style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;"> linkedin </a> 
-        <a href="https://www.facebook.com/jesser.sallemi/" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;"> facebook </a>
-        
+        <form id="contactForm">
+            <label for="name">Votre nom:</label>
+            <input type="text" id="name" placeholder="Votre nom" required><br>
 
+            <label for="prenom">Votre prénom:</label>
+            <input type="text" id="prenom" placeholder="Votre prénom" required><br>
+
+            <label for="cin">Numéro de CIN:</label>
+            <input type="text" id="cin" placeholder="Votre numéro de CIN" required><br>
+
+            <label for="message">Message:</label>
+            <input type="text" id="message" placeholder="Message ici" required><br>
+
+            <label for="urgent">Urgent ? :</label>
+            <input type="checkbox"><br>
+
+            <input type="submit" onclick="validateForm()">
+        </form>
+
+        <h2>Me Contacter</h2>
+        <p>Email: jesser.sallemi@esprit.tn </p>
+        <p>Numéro: +216 28 617 477</p>
+        <p>Adresse: rue el saada, Ariana, Tunisie </p>
+
+        <h2>Media:</h2>
+        <img src="images.png" width="400px" height="300px">
+        <a href="https://www.linkedin.com/in/jesser-sallemi-4baa0412b/" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">LinkedIn </a>
+        <a href="https://www.facebook.com/jesser.sallemi/" style="margin: 0 10px; color: #333; text-decoration: none; font-weight: bold;">Facebook </a>
     </main>
-	<footer>
+
+    <footer>
         <h3>Contact and GitHub</h3>
         <p>Email: jesser.sallemi@esprit.tn</p>
         <p>GitHub: <a href="https://github.com/jesser-007" target="_blank">github.com/jesser-007</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
